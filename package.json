@@ -18,9 +18,17 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
+    
   ],
   "repository": {
     "type": "git",
     "url": "git@github.com:AmitWaghmareLivehealth/speech_to_text.git"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "webpack --progress --colors --p",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "transpile": "babel ./src/SpeechToText.js --preset babel-preset-es2015 --out-file ./dist/SpeechToText.js"
   }
 }
