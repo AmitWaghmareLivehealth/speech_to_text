@@ -66,3 +66,6 @@ index.css
 ```
 Demo Video
 https://www.loom.com/share/5a02e297a36c42678e698bbfd36cf053
+
+Code sandbox
+https://codesandbox.io/s/goofy-hopper-2pxic
