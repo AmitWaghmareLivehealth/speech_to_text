@@ -16,8 +16,12 @@ class App extends React.Component {
 							start={start}
 							defaultText={txt}
 							onListen={this.onListen}
-                            style={{ fontSize: 30, display: "contents" }}
-                            
+							style={{ fontSize: 30, display: "contents" }}
+							component={
+								<button style={{ padding: 10 }}>
+									{start ? "Stop" : "Start"}
+								</button>
+							}
 						/>
 					</div>
 					<p>{txt}</p>
