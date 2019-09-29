@@ -1,8 +1,10 @@
 {
   "name": "react_chrome_speechtotext",
-  "version": "1.1.15",
+  "version": "1.1.16",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "\"registry\":\"https://npm.pkg.github.com/\""
+  ],
   "main": "dist/SpeechToText.js",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
@@ -20,8 +22,5 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:AmitWaghmareLivehealth/speech_to_text.git"
-  },
-  "keywords": [
-    "\"registry\":\"https://npm.pkg.github.com/\""
-  ]
+  }
 }
