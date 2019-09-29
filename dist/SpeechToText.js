@@ -193,7 +193,8 @@ function (_Component) {
       var _this$props2 = this.props,
           start = _this$props2.start,
           style = _this$props2.style,
-          className = _this$props2.className;
+          className = _this$props2.className,
+          component = _this$props2.component;
       var _this$state = this.state,
           stopListening = _this$state.stopListening,
           notAllowed = _this$state.notAllowed;
@@ -211,7 +212,7 @@ function (_Component) {
           display: "flex",
           lineHeight: "1.8"
         }, style)
-      }, "className", start && !stopListening ? "blink" : className), _react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
+      }, "className", start && !stopListening ? "blink" : className), component || _react.default.createElement(_reactFontawesome.FontAwesomeIcon, {
         icon: _freeSolidSvgIcons.faMicrophone
       }), _react.default.createElement("span", {
         className: "speechToText",

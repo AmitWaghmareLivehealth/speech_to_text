@@ -123,7 +123,7 @@ export default class SpeechToText extends Component {
 		this.setState({ stopListening: true });
 	};
 	render() {
-		const { start, style, className } = this.props;
+		const { start, style, className, component } = this.props;
 		const { stopListening, notAllowed } = this.state;
 		return (
 			<React.Fragment>
@@ -146,7 +146,7 @@ export default class SpeechToText extends Component {
 							...style,
 						}}
 						className={start && !stopListening ? "blink" : className}>
-						<FontAwesomeIcon icon={faMicrophone} />
+						{component || <FontAwesomeIcon icon={faMicrophone} />}
 						<span
 							className="speechToText"
 							style={{ marginLeft: 7, color: "#65c665" }}></span>
